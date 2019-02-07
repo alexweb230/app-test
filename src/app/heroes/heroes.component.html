@@ -1,22 +1,22 @@
-<div *ngIf="selectedHero">
-    <p>
-        {{selectedHero.id}}
-    </p>
-    <p>
-        {{selectedHero.name | uppercase}}
-    </p>
+<!--<ul>-->
+    <!--<li *ngFor="let heroL of heroesLIst"-->
+        <!--[class.selected]="heroL === selectedHero"-->
+        <!--(click)="onSelect(heroL)">-->
+        <!---->
+        <!--<span>{{heroL.id}}</span>-->
+        <!--<span>{{heroL.name}}</span>-->
+       <!---->
+    <!--</li>-->
 
-    <input type="text" [(ngModel)]="selectedHero.name">
-
-</div>
+<!--</ul>-->
 <ul>
-    <li
-            *ngFor="let heroL of heroesLIst"
-            [class.selected]="heroL === selectedHero"
-            (click)="onSelect(heroL)">
-        <span>{{heroL.id}}</span>
-        <span>{{heroL.name}}</span>
-        {{heroL | json}}
+    <li *ngFor="let heroL of heroesSer">
+        <a routerLink="/detail/{{heroL.id}}">
+            <span>{{heroL.id}}</span>
+            <span>{{heroL.name}}</span>
+        </a>
     </li>
 
 </ul>
+
+<app-hero-detail></app-hero-detail>

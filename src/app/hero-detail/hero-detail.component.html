@@ -1,3 +1,12 @@
-<p>
-  hero-detail works!
-</p>
+<div *ngIf="heroes">
+    <p>
+        {{heroes | json}}
+    </p>
+    <p>
+        {{heroes.name | uppercase}}
+    </p>
+
+    <input type="text" [(ngModel)]="heroes.name">
+</div>
+
+<button (click)="goBack()">go back</button>
