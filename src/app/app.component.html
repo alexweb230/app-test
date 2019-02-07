@@ -1,11 +1,12 @@
 
 <h1>{{title}}</h1>
 
-<h2>{{myHero}}</h2>
+<h2>{{myHero.name}}</h2>
 
 <ul>
     <li *ngFor="let hero of heroes">
-       {{hero}}
+        {{hero.id}}
+       {{hero.name}}
     </li>
 </ul>
 <p *ngIf="heroes.length > 3">heroes list {{heroes.length}}</p>
