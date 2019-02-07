@@ -9,6 +9,7 @@ import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroComponent } from './hero/hero.component';
+import { HighlightDirective } from './highlight.directive';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HeroComponent } from './hero/hero.component';
     HeroDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroComponent
+    HeroComponent,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,

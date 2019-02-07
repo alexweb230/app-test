@@ -20,6 +20,11 @@ export class AppComponent {
     myHero = this.heroes[0];
 
 
+
+
+
+    isSpecial: boolean = false;
+
     isUnchanged: boolean = true;
 
     heroImageUrl: string = 'https://picsum.photos/200';
@@ -27,8 +32,6 @@ export class AppComponent {
     classes = 'sssssssssss';
 
     getClick(): void{
-        let eee = this.classes = 'test';
-
-
+        this.classes = 'test';
     }
 }
