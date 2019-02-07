@@ -18,4 +18,17 @@ export class AppComponent {
   ];
 
     myHero = this.heroes[0];
+
+
+    isUnchanged: boolean = true;
+
+    heroImageUrl: string = 'https://picsum.photos/200';
+
+    classes = 'sssssssssss';
+
+    getClick(): void{
+        let eee = this.classes = 'test';
+
+
+    }
 }

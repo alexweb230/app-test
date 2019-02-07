@@ -10,5 +10,17 @@
     </li>
 </ul>
 <p *ngIf="heroes.length > 3">heroes list {{heroes.length}}</p>
+
+
+
+
+<button [disabled]="isUnchanged">Save</button>
+
+<img [src]="heroImageUrl">
+<div [ngClass]="classes" (click)="getClick()">wwww</div>
+
+<!--<input type="text" #customerInput>-->
+<!--<label>{{customerInput.value}}</label>-->
+
 <router-outlet></router-outlet>
 
