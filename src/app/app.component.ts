@@ -19,6 +19,8 @@ export class AppComponent {
 
     myHero = this.heroes[0];
 
+    color = 'red';
+
 
 
 
