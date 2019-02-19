@@ -10,6 +10,7 @@ import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroComponent } from './hero/hero.component';
 import { HighlightDirective } from './highlight.directive';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { HighlightDirective } from './highlight.directive';
     MessagesComponent,
     DashboardComponent,
     HeroComponent,
-    HighlightDirective
+    HighlightDirective,
+    TestComponent
   ],
   imports: [
     BrowserModule,

@@ -8,7 +8,19 @@ import {Heroes} from './heroes';
 })
 export class AppComponent {
   title = 'tour of heroes';
+  public name = '';
 
+  val: string = '';
+
+  public hasError = false;
+  public isSpec = true;
+  public successClass = false;
+
+  public activeClass = {
+      'text-succsec': !this.hasError,
+      'text-danger': !this.isSpec,
+      'text-special': !this.successClass
+  }
 
   heroes = [
       new Heroes(1, 'Windstorm'),
@@ -21,9 +33,16 @@ export class AppComponent {
 
     color = 'silver';
 
+    public text: string = '';
 
+    logMessage(value){
+        console.log(value);
+    }
 
-
+    onClick(event){
+        this.text = event.type;
+        console.log(event);
+    }
 
     isSpecial: boolean = false;
 

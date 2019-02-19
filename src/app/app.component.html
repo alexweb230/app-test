@@ -24,11 +24,26 @@
 <p appHighlight >Highlight me!</p>
 
 
+<input #customerInput [(ngModel)]="val">
+<br>
+<label>{{val}}</label>
+
+
+<h2 [ngClass]="activeClass">hello</h2>
+
+
+<input type="text">
 
 
 
+<!--<input type="text" #myInput>-->
+<!--<button (click)="logMessage(myInput)">log</button>-->
+<!--{{myInput}}-->
 
-
+<!--<button (click)="onClick($event)">Greet</button>-->
+<!--{{text}}-->
+<!--<br>-->
+<!--<button (click)="text='hello'">Greet</button>-->
 
 <!--<button [disabled]="isUnchanged">Save</button>-->
 
