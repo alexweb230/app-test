@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TestComponent implements OnInit {
 
+  displayName: boolean = false;
+    displayN: boolean = true;
+
   constructor() { }
 
   ngOnInit() {

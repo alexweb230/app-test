@@ -1,3 +1,17 @@
-<p>
-  test works!
-</p>
+<h2 *ngIf="displayName; else elseBlock">alexweb</h2>
+
+<ng-template #elseBlock>
+  <h2>alexweb-2</h2>
+</ng-template>
+
+
+
+<div *ngIf="displayN; then tes; else tesB"></div>
+
+<ng-template #tes>
+  <h2>alexweb-3</h2>
+</ng-template>
+
+<ng-template #tesB>
+  <h2>alexweb-4</h2>
+</ng-template>
