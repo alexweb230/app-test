@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 
 @Component({
   selector: 'app-test',
@@ -11,11 +11,15 @@ export class TestComponent implements OnInit {
     displayN: boolean = true;
 
 
-  @Input() public parentData;
+  @Input('parentData') public name;
+
+  @Output() public childEvent = new EventEmitter();
 
   constructor() { }
 
   ngOnInit() {
   }
-
+    fireEvent(){
+        this.childEvent.emit('go to parent');
+    }
 }

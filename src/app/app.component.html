@@ -33,8 +33,9 @@
 
 
 <input type="text">
+<p>{{message}}</p>
 
-<app-test [parentData]="TestName"></app-test>
+<app-test (childEvent)="message=$event" [parentData]="TestName"></app-test>
 
 <!--<input type="text" #myInput>-->
 <!--<button (click)="logMessage(myInput)">log</button>-->

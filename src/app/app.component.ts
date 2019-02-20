@@ -58,4 +58,6 @@ export class AppComponent {
 
 
     public TestName: string = 'alexpust';
+
+    public message = '';
 }
