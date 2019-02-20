@@ -11,6 +11,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroComponent } from './hero/hero.component';
 import { HighlightDirective } from './highlight.directive';
 import { TestComponent } from './test/test.component';
+import { ParentComponent } from './parent/parent.component';
+import { ChildComponent } from './child/child.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { TestComponent } from './test/test.component';
     DashboardComponent,
     HeroComponent,
     HighlightDirective,
-    TestComponent
+    TestComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,

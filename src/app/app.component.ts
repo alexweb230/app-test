@@ -55,4 +55,7 @@ export class AppComponent {
     getClick(): void{
         this.classes = 'test';
     }
+
+
+    public TestName: string = 'alexpust';
 }
